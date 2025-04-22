@@ -1,7 +1,7 @@
 # Historia de Usuario - Registro de datos del cliente para la reserva
 
 ## 1. Identificador y Título  
-**HU-06: Registro de datos del cliente para la reserva**
+**HU-02: Registro de datos del cliente para la reserva**
 
 ---
 
