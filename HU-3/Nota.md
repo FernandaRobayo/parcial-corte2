@@ -1,7 +1,7 @@
 # Historia de Usuario - Selección de Mesa
 
 ## 1. Identificador y Título  
-**HU-08: Seleccionar una mesa disponible para la reserva**
+**HU-03: Seleccionar una mesa disponible para la reserva**
 
 ---
 
