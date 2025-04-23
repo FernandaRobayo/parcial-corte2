@@ -1,0 +1,34 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title> Fecha</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <ion-label position="floating">Nombre del Cliente</ion-label>
+      <ion-input [(ngModel)]="encabezado.nombreCliente"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Cédula</ion-label>
+      <ion-input [(ngModel)]="encabezado.cedula"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fecha</ion-label>
+      <ion-datetime
+        presentation="date"
+        [(ngModel)]="encabezado.fecha"
+        [max]="hoy"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="full" (click)="guardarEncabezado()">Guardar Encabezado</ion-button>
+
+    <div *ngIf="confirmado" class="mensaje">
+      <ion-text color="success">
+        <p>Encabezado guardado correctamente.</p>
+      </ion-text>
+    </div>
+  </ion-card-content>
+</ion-card>
