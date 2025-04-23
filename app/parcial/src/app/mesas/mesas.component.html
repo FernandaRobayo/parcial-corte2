@@ -1,0 +1,27 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Seleccionar Mesa</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" *ngFor="let mesa of mesasDisponibles">
+          <ion-button 
+            expand="block" 
+            [color]="mesaSeleccionada === mesa ? 'success' : 'medium'" 
+            (click)="seleccionarMesa(mesa)">
+            Mesa {{ mesa }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div *ngIf="mesaSeleccionada !== null" class="mesa-info">
+      <ion-text color="success">
+        Mesa seleccionada: {{ mesaSeleccionada }}
+      </ion-text>
+    </div>
+
+  </ion-card-content>
+</ion-card>
